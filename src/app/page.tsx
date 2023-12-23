@@ -1,15 +1,20 @@
+// Home.tsx
+
 import Countdown from "../components/tiles/Countdown";
 import Mail from "../components/tiles/Mail";
 import Time from "../components/tiles/Time";
 import Socials from "../components/tiles/Socials";
 import Spotify from "../components/tiles/Spotify";
-import Discord from "../components/tiles/Discord";
+import Discord, { fetchUserData } from "../components/tiles/Discord";
 import Domain from "../components/tiles/Domain";
-import Image from "next/image"; // Import the Image component
+import Image from "next/image";
 
-export default async function Home() {
+interface HomeProps {
+  discordData: any;
+}
+
+export default function Home({ discordData }: HomeProps) {
   return (
-    
     <main>
       <div className="mx-4 flex items-center justify-center">
         <div className="grid max-w-prose grid-cols-3 grid-rows-2 gap-3 md:gap-6">
@@ -27,9 +32,19 @@ export default async function Home() {
           <Time />
           <Countdown />
           <Mail />
-          <Discord />
+          <Discord data={discordData} />
         </div>
       </div>
     </main>
   );
+}
+
+export async function getServerSideProps() {
+  const discordData = await fetchUserData();
+
+  return {
+    props: {
+      discordData,
+    },
+  };
 }

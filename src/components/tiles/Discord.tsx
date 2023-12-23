@@ -6,7 +6,7 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-async function fetchUserData() {
+export async function fetchUserData() {
   let body: any = await fetch("https://api.lanyard.rest/v1/users/745631824163766412").then((res: any) => res.json());
   return body.data;
 }
@@ -33,7 +33,7 @@ interface DiscordData {
   success: boolean;
 }
 
-const Home: NextPage<{ data: DiscordData }> = ({ data = { discord_user: {}, discord_status: "", active_on_discord_web: false, active_on_discord_desktop: false, active_on_discord_mobile: false, listening_to_spotify: false, success: false } }) => {
+const Discord: NextPage<{ data: DiscordData }> = ({ data }) => {
   const [userData, setUserData] = useState<DiscordData>(data);
 
   const updateData = (newData: DiscordData) => {
@@ -97,13 +97,4 @@ const Home: NextPage<{ data: DiscordData }> = ({ data = { discord_user: {}, disc
   );
 };
 
-export async function getServerSideProps() {
-  const initialData = await fetchUserData();
-  return {
-    props: {
-      data: initialData,
-    },
-  };
-}
-
-export default Home;
+export default Discord;
