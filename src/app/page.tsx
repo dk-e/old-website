@@ -5,12 +5,12 @@ import Mail from "../components/tiles/Mail";
 import Time from "../components/tiles/Time";
 import Socials from "../components/tiles/Socials";
 import Spotify from "../components/tiles/Spotify";
-import Discord, { fetchUserData } from "../components/tiles/Discord";
+import Discord from "../components/tiles/Discord";  // Check this import statement
 import Domain from "../components/tiles/Domain";
 import Image from "next/image";
 
 interface HomeProps {
-  discordData: any; // Replace 'any' with the actual type of discordData
+  discordData: any;
 }
 
 const Home = ({ discordData }: HomeProps) => (
@@ -36,13 +36,5 @@ const Home = ({ discordData }: HomeProps) => (
     </div>
   </main>
 );
-
-Home.getInitialProps = async () => {
-  const discordData = await fetchUserData();
-
-  return {
-    discordData,
-  };
-};
 
 export default Home;
