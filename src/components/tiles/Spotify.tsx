@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 async function fetchUserData() {
-  let body: any = await fetch("https://api.lanyard.rest/v1/users/745631824163766412").then((res: any) => res.json());
+  const body: any = await fetch("https://api.lanyard.rest/v1/users/745631824163766412").then((res: any) => res.json());
   return body.data;
 }
 
