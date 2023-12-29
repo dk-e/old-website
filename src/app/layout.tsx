@@ -7,7 +7,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <title>zurly.lol &bull; moani.ng</title>
+        <title>zurly.lol</title>
         <meta itemProp="thumbnailUrl" content="/logo.png" />
         <meta itemProp="image" content="/logo.png" />
         <meta itemProp="imageUrl" content="/logo.png" />

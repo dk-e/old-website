@@ -22,7 +22,7 @@ const Home = () => {
               <Image src="/logo.png" alt="Logo" width={40} height={40} />
             </div>
             <h1 className="mb-2 bg-gradient-to-tl from-white via-gray-400 to-pink-300 bg-300% bg-clip-text text-4xl font-bold text-transparent motion-safe:animate-gradient">
-              zurly.lol &bull; moani.ng
+              zurly.lol
             </h1>
           </div>
           <Domain />
