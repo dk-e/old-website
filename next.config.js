@@ -15,7 +15,7 @@ module.exports = {
         },
         {
           source: '/insta',
-          destination: 'https://instagram.com/ethann______________/',
+          destination: 'https://instagram.com/racist_______/',
           permanent: true,
         },
         {
