@@ -1,6 +1,5 @@
 import { SiGithub, SiInstagram, SiTelegram, SiSpotify, SiSteam } from "react-icons/si";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaLastfm } from "react-icons/fa6";
+import { FaXTwitter, FaLastfm, FaGlobe } from "react-icons/fa6";
 import Social from "../Social";
 
 export default function Socials() {
@@ -39,6 +38,16 @@ export default function Socials() {
           name="Last.fm"
           link="/lf"
           icon={<FaLastfm className="h-5 w-5" />}
+        />
+              <Social
+          name="Sobs"
+          link="/sobs"
+          icon={<FaGlobe className="h-5 w-5" />}
+        />
+              <Social
+          name="Corrupt"
+          link="/corrupt"
+          icon={<FaGlobe className="h-5 w-5" />}
         />
       </div>
     </div>

@@ -43,6 +43,16 @@ module.exports = {
             destination: 'https://discord.com/users/745631824163766412',
             permanent: true,
           },
+          {
+            source: '/sobs',
+            destination: 'https://sobs.lol/z',
+            permanent: true,
+          },
+          {
+            source: '/corrupt',
+            destination: 'https://corrupt.bio/z',
+            permanent: true,
+          },
       ]
     },
   }
