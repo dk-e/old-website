@@ -1,1 +1,1 @@
-# zurly.lol - moani.ng
+# zurly.me | zurly.tech

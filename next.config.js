@@ -5,7 +5,7 @@ module.exports = {
       return [
         {
           source: '/github',
-          destination: 'https://github.com/bIissey',
+          destination: 'https://github.com/zurlyy',
           permanent: true,
         },
         {
@@ -14,23 +14,13 @@ module.exports = {
           permanent: true,
         },
         {
-          source: '/insta',
-          destination: 'https://instagram.com/racist_______/',
-          permanent: true,
-        },
-        {
           source: '/tele',
-          destination: 'https://t.me/bIissey',
+          destination: 'https://t.me/aerating',
           permanent: true,
         },
         {
             source: '/steam',
             destination: 'https://steamcommunity.com/id/zurIy/',
-            permanent: true,
-          },
-          {
-            source: '/spotify',
-            destination: 'https://open.spotify.com/user/31x5z4l2uihlgujbdx7mjopqtfwy',
             permanent: true,
           },
           {
@@ -41,16 +31,6 @@ module.exports = {
           {
             source: '/discord',
             destination: 'https://discord.com/users/745631824163766412',
-            permanent: true,
-          },
-          {
-            source: '/sobs',
-            destination: 'https://sobs.lol/z',
-            permanent: true,
-          },
-          {
-            source: '/corrupt',
-            destination: 'https://corrupt.bio/z',
             permanent: true,
           },
       ]

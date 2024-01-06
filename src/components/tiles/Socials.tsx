@@ -9,46 +9,11 @@ export default function Socials() {
         Socials
       </h2>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
-        <Social 
-          name="X" 
-          link="/x" 
-          icon={<FaXTwitter className="h-5 w-5" />} />
-        <Social 
-          name="GitHub" 
-          link="/github" 
-          icon={<SiGithub className="h-5 w-5" />} />
-        <Social 
-          name="Instagram" 
-          link="/insta" 
-          icon={<SiInstagram className="h-5 w-5" />} />
-        <Social 
-          name="Telegram" 
-          link="/tele" 
-          icon={<SiTelegram className="h-5 w-5" />} />
-        <Social 
-          name="Steam" 
-          link="/steam" 
-          icon={<SiSteam className="h-5 w-5" />} />
-        <Social
-          name="Spotify"
-          link="/spotify"
-          icon={<SiSpotify className="h-5 w-5" />}
-        />
-        <Social
-          name="Last.fm"
-          link="/lf"
-          icon={<FaLastfm className="h-5 w-5" />}
-        />
-              <Social
-          name="Sobs"
-          link="/sobs"
-          icon={<FaGlobe className="h-5 w-5" />}
-        />
-              <Social
-          name="Corrupt"
-          link="/corrupt"
-          icon={<FaGlobe className="h-5 w-5" />}
-        />
+        <Social name="X" link="/x" icon={<FaXTwitter className="h-5 w-5" />} />
+        <Social name="GitHub" link="/github" icon={<SiGithub className="h-5 w-5" />} />
+        <Social name="Telegram" link="/tele" icon={<SiTelegram className="h-5 w-5" />} />
+        <Social name="Steam" link="/steam" icon={<SiSteam className="h-5 w-5" />} />
+        <Social name="Last.fm" link="/lf" icon={<FaLastfm className="h-5 w-5" />} />
       </div>
     </div>
   );
