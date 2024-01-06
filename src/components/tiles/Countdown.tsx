@@ -34,7 +34,7 @@ export default function Countdown() {
         <>
           <p className="text-xs group-hover:hidden">until valentines day</p>
           <p className="hidden text-xs group-hover:block">
-            until <strong>14 Februray</strong>
+            until <strong>14 February</strong>
           </p>
         </>
       )}
