@@ -64,24 +64,24 @@ const Discord: NextPage<{ data: DiscordData }> = ({ data }) => {
   const status = userData?.discord_status.toLowerCase();
 
   return (
-    <Link href="/discord" className="col-span-2 row-span-2 rounded-2xl p-6 text-right shadow md:p-8 bg-zinc-950">
+    <Link href="/discord" className="col-span-2 row-span-2 rounded-2xl bg-zinc-950 p-6 text-right shadow md:p-8">
       <div className={``}>
         <div className="scale-[1] space-y-1 text-center md:scale-[1.2]">
-          <div className="flex items-center justify-center mb-2">
+          <div className="mb-2 flex items-center justify-center">
             <img
               src={`https://cdn.discordapp.com/avatars/745631824163766412/${userData?.discord_user.avatar}.webp`}
               alt="User Avatar"
-              className="h-14 w-14 rounded-full mr-2"
+              className="mr-2 h-14 w-14 rounded-full"
             />
             <span
               className={`h-3 w-3 rounded-full ${
                 status === "online"
                   ? "bg-green-500"
                   : status === "idle"
-                  ? "bg-amber-500"
-                  : status === "dnd"
-                  ? "bg-red-500"
-                  : "bg-zinc-500"
+                    ? "bg-amber-500"
+                    : status === "dnd"
+                      ? "bg-red-500"
+                      : "bg-zinc-500"
               } animate-pulse`}
               style={{
                 animation: "pulse 1.5s infinite",
@@ -89,7 +89,9 @@ const Discord: NextPage<{ data: DiscordData }> = ({ data }) => {
             />
           </div>
           <h2>
-            <span><strong>@{userData?.discord_user.username}</strong></span>
+            <span>
+              <strong>@{userData?.discord_user.username}</strong>
+            </span>
           </h2>
         </div>
       </div>

@@ -20,7 +20,7 @@ const Home = () => {
           <div className="col-span-3 row-span-2 flex items-center justify-center py-8 text-center">
             <div className="mr-2">{/* <Image src="/logo.png" alt="Logo" width={40} height={40} /> */}</div>
             <h1 className="mb-2 bg-gradient-to-tl from-white via-gray-400 to-black bg-300% bg-clip-text text-4xl font-bold text-transparent motion-safe:animate-gradient">
-              zurly.me | zurly.tech
+              zurly.me
             </h1>
           </div>
           <Domain />
