@@ -13,7 +13,7 @@ export default function Countdown() {
   useEffect(() => {
     const now = DateTime.now().startOf("day");
 
-    const countdownPassed = now.month > MONTH || now.day >= DAY;
+    const countdownPassed = now.month > MONTH || (now.month === MONTH && now.day >= DAY);
     const countdown = DateTime.fromObject({
       year: countdownPassed ? now.year + 1 : now.year,
       month: MONTH,

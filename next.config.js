@@ -32,7 +32,12 @@ module.exports = {
             source: '/discord',
             destination: 'https://discord.com/users/745631824163766412',
             permanent: true,
-          },
+        },
+        {
+          source: '/stats',
+          destination: 'https://stats.fm/warn',
+          permanent: true,
+        },
       ]
     },
   }
