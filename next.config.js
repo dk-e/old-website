@@ -14,8 +14,8 @@ module.exports = {
           permanent: true,
         },
         {
-          source: '/tele',
-          destination: 'https://t.me/aerating',
+          source: '/api',
+          destination: 'https://api.zurly.me',
           permanent: true,
         },
         {

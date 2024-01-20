@@ -3,7 +3,7 @@
 import Countdown from "../components/tiles/Countdown";
 import Mail from "../components/tiles/Mail";
 import Time from "../components/tiles/Time";
-import Socials from "../components/tiles/Socials";
+import Sites from "../components/tiles/Sites";
 import Spotify from "../components/tiles/Spotify";
 import Discord from "../components/tiles/Discord";
 import Domain from "../components/tiles/Domain";
@@ -24,7 +24,7 @@ const Home = () => {
             </h1>
           </div>
           <Domain />
-          <Socials />
+          <Sites />
           <Spotify />
           <Time />
           <Countdown />
