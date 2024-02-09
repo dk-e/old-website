@@ -1,5 +1,5 @@
 // useDiscordData.ts
-import { useEffect as useReactEffect, useState as useReactState } from 'react';
+import { useEffect as useReactEffect, useState as useReactState } from "react";
 
 export function useDiscordData(useEffect = useReactEffect, useState = useReactState) {
   const [discordData, setDiscordData] = useState(null);
@@ -11,7 +11,7 @@ export function useDiscordData(useEffect = useReactEffect, useState = useReactSt
         const data = await response.json();
         return data.data;
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
         return null;
       }
     };
@@ -22,7 +22,7 @@ export function useDiscordData(useEffect = useReactEffect, useState = useReactSt
     };
 
     fetchData();
-    const interval = setInterval(fetchData, 5000); // Fetch data every 5 seconds
+    const interval = setInterval(fetchData, 10000); // Fetch data every 10 seconds
 
     return () => {
       clearInterval(interval);
