@@ -7,7 +7,7 @@ export default function Mail() {
   return (
     <>
       <Link
-        href="mailto:d@zurly.me"
+        href="mailto:hi@zurly.me"
         className="group col-span-1 row-span-2 cursor-pointer rounded-2xl bg-zinc-800 p-6 shadow transition-all duration-500 hover:scale-95 md:p-8"
       >
         <div className="flex h-full items-center justify-center">
