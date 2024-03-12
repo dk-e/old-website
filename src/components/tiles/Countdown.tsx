@@ -4,8 +4,8 @@
 import { useEffect, useState } from "react";
 import { DateTime } from "luxon";
 
-const MONTH = 2 as const;
-const DAY = 14 as const;
+const MONTH = 4 as const;
+const DAY = 1 as const;
 
 export default function Countdown() {
   const [days, setDays] = useState<number>();
@@ -29,12 +29,12 @@ export default function Countdown() {
         {days ? (days === 366 ? "Today" : `${days} day${days !== 1 ? "s" : ""}`) : "--"}
       </h2>
       {days === 366 ? (
-        <p className="text-xs">Its valentines 💋😽</p>
+        <p className="text-xs">It&apos;s April Fools Day! (Happy birthday Yanis, i fr love you bro. Mashallah.) 🎉</p>
       ) : (
         <>
-          <p className="text-xs group-hover:hidden">until valentines day</p>
+          <p className="text-xs group-hover:hidden">until April Fools Day</p>
           <p className="hidden text-xs group-hover:block">
-            until <strong>14 February</strong>
+            until <strong>1 April</strong>
           </p>
         </>
       )}
