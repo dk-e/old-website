@@ -1,4 +1,3 @@
-// useDiscordData.ts
 import { useEffect as useReactEffect, useState as useReactState } from "react";
 
 export function useDiscordData(useEffect = useReactEffect, useState = useReactState) {
