@@ -26,9 +26,9 @@ export default function Countdown() {
   return (
     <div className="group col-span-2 row-span-1 rounded-2xl bg-zinc-800 p-4 text-center shadow md:col-span-1">
       <h2 className="mb-0.5 bg-gradient-to-tl from-white to-gray-400 bg-clip-text text-xl font-medium text-transparent md:mb-2">
-        {days ? (days === 366 ? "Today" : `${days} day${days !== 1 ? "s" : ""}`) : "--"}
+        {days ? (days === 365 ? "Today" : `${days} day${days !== 1 ? "s" : ""}`) : "--"}
       </h2>
-      {days === 366 ? (
+      {days === 365 ? (
         <p className="text-xs">It&apos;s April Fools Day! (Happy birthday Yanis, i fr love you bro. Mashallah.) 🎉</p>
       ) : (
         <>
