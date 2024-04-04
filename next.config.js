@@ -5,7 +5,7 @@ module.exports = {
       return [
         {
           source: '/github',
-          destination: 'https://github.com/zurlyy',
+          destination: 'https://github.com/dk-e',
           permanent: true,
         },
         {

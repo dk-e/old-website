@@ -29,12 +29,12 @@ export default function Countdown() {
         {days ? (days === 366 ? "Today" : `${days} day${days !== 1 ? "s" : ""}`) : "--"}
       </h2>
       {days === 366 ? (
-        <p className="text-xs">It&apos;s April Fools Day! (Happy birthday Yanis, i fr love you bro. Mashallah.) 🎉</p>
+        <p className="text-xs">It&apos;s my birthday! 🥳🎂</p>
       ) : (
         <>
-          <p className="text-xs group-hover:hidden">until April Fools Day</p>
+          <p className="text-xs group-hover:hidden">until Birthday</p>
           <p className="hidden text-xs group-hover:block">
-            until <strong>1 April</strong>
+            until <strong>23 February</strong>
           </p>
         </>
       )}
