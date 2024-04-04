@@ -1,11 +1,10 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import { useEffect, useState } from "react";
 import { DateTime } from "luxon";
 
-const MONTH = 4 as const;
-const DAY = 1 as const;
+const MONTH = 2 as const;
+const DAY = 23 as const;
 
 export default function Countdown() {
   const [days, setDays] = useState<number>();
