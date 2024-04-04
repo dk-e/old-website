@@ -28,13 +28,8 @@ export default function Countdown() {
       <h2 className="mb-0.5 bg-gradient-to-tl from-white to-gray-400 bg-clip-text text-xl font-medium text-transparent md:mb-2">
         {days ? (days === 365 ? "Today" : `${days} day${days !== 1 ? "s" : ""}`) : "--"}
       </h2>
-<<<<<<< HEAD
       {days === 366 ? (
         <p className="text-xs">It&apos;s my birthday! 🥳🎂</p>
-=======
-      {days === 365 ? (
-        <p className="text-xs">It&apos;s April Fools Day! (Happy birthday Yanis, i fr love you bro. Mashallah.) 🎉</p>
->>>>>>> eb48a4b964faa08731ffb48ed2cab6f675ad8865
       ) : (
         <>
           <p className="text-xs group-hover:hidden">until Birthday</p>
