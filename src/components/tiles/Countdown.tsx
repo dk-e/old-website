@@ -18,7 +18,7 @@ export default function Countdown() {
       month: MONTH,
       day: DAY,
     });
-
+// test
     setDays(countdown.diff(now, "days").days);
   }, []);
 
