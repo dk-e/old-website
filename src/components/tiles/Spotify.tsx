@@ -55,7 +55,7 @@ const Home: NextPage = () => {
 
   if (data.spotify === null) {
     return (
-      <Link href="/stats" className="col-span-3 row-span-2 rounded-2xl bg-black p-6 shadow md:col-span-2 md:p-8">
+      <Link href="/spotify" className="col-span-3 row-span-2 rounded-2xl bg-black p-6 shadow md:col-span-2 md:p-8">
         <h2 className="mb-3 bg-gradient-to-tl from-zinc-500 to-zinc-300 bg-clip-text text-xl font-semibold text-transparent md:text-2xl">
           Spotify
         </h2>{" "}
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
         backgroundPosition: "center",
       }}
     >
-      <Link href="/stats">
+      <Link href="/spotify">
         <div
           className="rounded-2xl p-6 backdrop-blur-md backdrop-filter"
           style={{

@@ -9,6 +9,11 @@ module.exports = {
           permanent: true,
         },
         {
+          source: '/spotify',
+          destination: 'https://open.spotify.com/user/31x5z4l2uihlgujbdx7mjopqtfwy?si=eb2e17184793474c',
+          permanent: true,
+        },
+        {
           source: '/x',
           destination: 'https://twitter.com/lootings',
           permanent: true,
